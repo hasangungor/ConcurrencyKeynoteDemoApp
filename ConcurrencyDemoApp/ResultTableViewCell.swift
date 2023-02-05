@@ -27,18 +27,22 @@ class ResultTableViewCell: UITableViewCell {
     private func downloadImage(imageURL: URL) {
         let task = URLSession.shared.dataTask(with: URLRequest(url: imageURL)) { data, response, err in
             if err == nil , let imgData = data {
-
-                // Main Thread Issue
-//                self.artworkImage.image = UIImage(data: imgData)
-                
-                // Correct Way: Update UI in only main thread
-                DispatchQueue.main.async { [weak self] in
-                    self?.artworkImage.image = UIImage(data: imgData)
-                }
+                self.setImageWithCorrectWayInMainThread(data: imgData)
             }
         }
         
         task.resume()
+    }
+    
+    func setImageWithWrongWayInBackgroundThread(data: Data) {
+        // Main Thread Issue will occurs
+        self.artworkImage.image = UIImage(data: data)
+    }
+    
+    func setImageWithCorrectWayInMainThread(data: Data) {
+        DispatchQueue.main.async { [weak self] in
+            self?.artworkImage.image = UIImage(data: data)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

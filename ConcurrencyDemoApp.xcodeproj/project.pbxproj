@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3503193E298EC56C00170DB7 /* OperationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503193D298EC56C00170DB7 /* OperationDemoViewController.swift */; };
+		35031940298EDD4900170DB7 /* DispatchGroupExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503193F298EDD4900170DB7 /* DispatchGroupExample.swift */; };
+		35455044298FA1770005B9A1 /* SwiftConcurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35455043298FA1770005B9A1 /* SwiftConcurrencyViewController.swift */; };
+		3565851B2986F2DA00A4FDBC /* FetchCustomerAccountOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3565851A2986F2DA00A4FDBC /* FetchCustomerAccountOperation.swift */; };
 		356B9C0C298503CF000694CD /* iTunesSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B9C0B298503CF000694CD /* iTunesSearchResponse.swift */; };
 		356B9C0E29850443000694CD /* iTunesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B9C0D29850443000694CD /* iTunesResult.swift */; };
 		356B9C1029850522000694CD /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B9C0F29850522000694CD /* ResultTableViewCell.swift */; };
+		356B9C1229850DC5000694CD /* ModernConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B9C1129850DC5000694CD /* ModernConcurrency.swift */; };
+		356B9C14298512DA000694CD /* ImageDownloaderOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B9C13298512DA000694CD /* ImageDownloaderOperation.swift */; };
 		35799E592984FE8500E6FAC8 /* GCDExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35799E582984FE8500E6FAC8 /* GCDExample.swift */; };
 		35799E5C298501E900E6FAC8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35799E5B298501E900E6FAC8 /* ListViewController.swift */; };
 		35F196112981D78000CBBD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F196102981D78000CBBD35 /* AppDelegate.swift */; };
@@ -42,9 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3503193D298EC56C00170DB7 /* OperationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationDemoViewController.swift; sourceTree = "<group>"; };
+		3503193F298EDD4900170DB7 /* DispatchGroupExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupExample.swift; sourceTree = "<group>"; };
+		35455043298FA1770005B9A1 /* SwiftConcurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyViewController.swift; sourceTree = "<group>"; };
+		3565851A2986F2DA00A4FDBC /* FetchCustomerAccountOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCustomerAccountOperation.swift; sourceTree = "<group>"; };
 		356B9C0B298503CF000694CD /* iTunesSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchResponse.swift; sourceTree = "<group>"; };
 		356B9C0D29850443000694CD /* iTunesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesResult.swift; sourceTree = "<group>"; };
 		356B9C0F29850522000694CD /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		356B9C1129850DC5000694CD /* ModernConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernConcurrency.swift; sourceTree = "<group>"; };
+		356B9C13298512DA000694CD /* ImageDownloaderOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderOperation.swift; sourceTree = "<group>"; };
 		35799E582984FE8500E6FAC8 /* GCDExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDExample.swift; sourceTree = "<group>"; };
 		35799E5B298501E900E6FAC8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		35F1960D2981D78000CBBD35 /* ConcurrencyDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,9 +138,11 @@
 				35F196402981D7EB00CBBD35 /* GCD */,
 				35F196102981D78000CBBD35 /* AppDelegate.swift */,
 				35F196122981D78000CBBD35 /* SceneDelegate.swift */,
+				35F196432981D85D00CBBD35 /* API.swift */,
 				35F196142981D78000CBBD35 /* ViewController.swift */,
 				35799E5B298501E900E6FAC8 /* ListViewController.swift */,
-				35F196432981D85D00CBBD35 /* API.swift */,
+				3503193D298EC56C00170DB7 /* OperationDemoViewController.swift */,
+				35455043298FA1770005B9A1 /* SwiftConcurrencyViewController.swift */,
 				35F196162981D78000CBBD35 /* Main.storyboard */,
 				35F196192981D78100CBBD35 /* Assets.xcassets */,
 				35F1961B2981D78100CBBD35 /* LaunchScreen.storyboard */,
@@ -159,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				35799E582984FE8500E6FAC8 /* GCDExample.swift */,
+				3503193F298EDD4900170DB7 /* DispatchGroupExample.swift */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -166,6 +181,8 @@
 		35F196412981D7F200CBBD35 /* Operation */ = {
 			isa = PBXGroup;
 			children = (
+				356B9C13298512DA000694CD /* ImageDownloaderOperation.swift */,
+				3565851A2986F2DA00A4FDBC /* FetchCustomerAccountOperation.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -173,6 +190,7 @@
 		35F196422981D7FA00CBBD35 /* Modern Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				356B9C1129850DC5000694CD /* ModernConcurrency.swift */,
 			);
 			path = "Modern Concurrency";
 			sourceTree = "<group>";
@@ -308,13 +326,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356B9C1229850DC5000694CD /* ModernConcurrency.swift in Sources */,
+				35455044298FA1770005B9A1 /* SwiftConcurrencyViewController.swift in Sources */,
 				35F196152981D78000CBBD35 /* ViewController.swift in Sources */,
 				356B9C0C298503CF000694CD /* iTunesSearchResponse.swift in Sources */,
+				3503193E298EC56C00170DB7 /* OperationDemoViewController.swift in Sources */,
 				35F196112981D78000CBBD35 /* AppDelegate.swift in Sources */,
+				3565851B2986F2DA00A4FDBC /* FetchCustomerAccountOperation.swift in Sources */,
 				35799E5C298501E900E6FAC8 /* ListViewController.swift in Sources */,
 				356B9C0E29850443000694CD /* iTunesResult.swift in Sources */,
+				35031940298EDD4900170DB7 /* DispatchGroupExample.swift in Sources */,
 				35F196442981D85D00CBBD35 /* API.swift in Sources */,
 				35799E592984FE8500E6FAC8 /* GCDExample.swift in Sources */,
+				356B9C14298512DA000694CD /* ImageDownloaderOperation.swift in Sources */,
 				356B9C1029850522000694CD /* ResultTableViewCell.swift in Sources */,
 				35F196132981D78000CBBD35 /* SceneDelegate.swift in Sources */,
 			);

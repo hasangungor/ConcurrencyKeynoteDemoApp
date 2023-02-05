@@ -15,9 +15,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        exampleGrandCentralDispatch()
-        
 //        GCDExample.concurrentQueueExample()
+        
+//        print("Task begin")
+//        Task {
+//            await callAPI()
+//            print("api called")
+//        }
     }
+    
     
     func fetchSearchAPI() {
         API.shared.search(term: "Taylor Swift") { result in
@@ -45,7 +51,7 @@ class ViewController: UIViewController {
                 // Run async code on the Main/UI Thread. E.g.: Refresh TableView
                 // ...
                 print("Main Thread is runnning. UI is refreshed")
-                self?.label.text = "API called"
+                self?.label.text = "API call is finished"
                 print("---- ----- ------ ------ ------ ------ -------")
             }
         }

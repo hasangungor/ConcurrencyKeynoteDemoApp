@@ -45,4 +45,10 @@ final class GCDExample {
             print("Task 4....")
         }
     }
+    
+    
+    func exampleOfQualityOfService() {
+        
+        let dispatchQueue = DispatchQueue.global(qos: .userInitiated)
+    }
 }
