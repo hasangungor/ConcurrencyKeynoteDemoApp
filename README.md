@@ -1,1 +1,1 @@
-My presentation and demo project to explain concurrency in iOS app to young talent students
+My presentation and demo project to explain concurrency in iOS app for Mobven Young Talent students
